@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+// font-family: 'Cookie', cursive;
+
+
+$b:#2a3b40;
+$w:#d4d8d9;
+*
+{
+    transition: all .2s linear;
+    margin: 0%;padding: 0%;
+    text-decoration: none;
+}
+
+
+html
+{
+    font-size: 70%;
+}
+// section
+// {
+//     padding: 3rem 8%;
+// }
+
+.home
+{
+    background: url('img/background.png') no-repeat;
+    background-position: center;
+   
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navbara
+    {
+        top: 2rem; left: 0%;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:100%; z-index: 1000;
+        .brand
+        {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: rgb(255, 253, 251);
+        }
+        .link a
+        {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: rgb(255, 253, 251);
+            font-size: 1.7rem;
+            margin: 0 1rem;
+        }
+        
+        
+    }
+    .content 
+    {
+        text-align: center;
+        background: rgba(219, 170, 121, 0.7);
+        padding: 4.5rem;
+        margin: 15% 2rem;
+    }
+    
+}
+#menubtn
+{
+    color: rgb(255, 253, 251);
+    font-size: 1.7rem;
+    display: none;
+    
+}
+.content-brand
+{
+    color: rgb(68, 66, 66);
+    font-size: 7rem;
+    font-weight: normal;
+    font-family: 'Cookie', cursive;
+}
+.content-text
+{
+    color: #b4751c;
+    font-size: 5rem;
+
+}
+.btn
+{
+    color: rgb(68, 66, 66);
+
+    font-weight: bold;
+    font-size: 1.5rem; 
+    display: inline-block;
+    padding: .5rem 1rem;
+    background: rgb(255, 255, 255);
+}
+
+.flavours
+{
+  
+   .box
+   {
+       background: $b;
+      
+       display: flex;
+       align-items: center;
+       padding:0 8%;
+       gap: 2rem;
+       
+
+       .subbox
+       {
+           flex: 1 1 1rem;
+           margin:0 2rem ;
+           h3 
+           {
+               color: $w;
+               font-size: 2rem;
+               margin: 2.5rem 0;
+           }
+           .p
+           {
+               width: 80%;
+               color: $w;
+               font-size: 1.7rem;
+           }
+           &.submenu1
+           {flex: 1 1 1rem;
+        
+
+               img 
+               {
+                   width: 80%;
+                   margin: 2rem;
+               }
+           }
+
+       }
+   }
+   h3 
+   {
+       color: $b;
+       font-size: 2.3rem;
+       margin: 1rem 0;
+   }
+   .p
+           {
+               width: 80%;
+               color: $b;
+               font-size: 1.3rem;
+           }
+   .box-1
+   {
+       background: $w;
+        display: flex;
+        min-height: 40vh;
+        
+        padding: 0 8%;
+        align-items: center;
+        justify-content: center;
+       .subbox
+       {
+           flex: 1 1 15rem;
+
+           div 
+           {
+               width: 2rem;height: 2rem;background: $b;
+               border-radius: 5rem;
+               display: inline-block;margin: 2rem 0;
+           }
+
+       }
+
+   }
+}
+
+
+
+
+.menu
+{
+    background: url('img/m7.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
+
+    .main
+    {
+        background: rgb(182, 176, 176);
+        display: inline-block;
+        max-width: 80%;
+
+
+        h2 
+        {
+            color: $b;
+            font-size: 2.8rem;
+
+        }
+        h1
+        {
+            font-size: 2.8rem;
+        }
+
+        .Rmmenu
+        {
+            
+            margin-top: 2rem;
+
+
+        .box
+        {
+            display: flex;
+            flex-wrap: wrap;
+
+            article
+            {
+                flex: 1 1 10rem;
+               
+                border: 0.1rem solid $b;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+               
+                h3 
+                {
+                    color: $b;
+                    margin: 1rem;
+
+                    
+                }
+                h4
+                {
+                    font-family: 'Cookie', cursive;
+                }
+                p 
+                {
+                    color: $b;
+                   
+                }
+               
+
+                img 
+                {
+                    width: 100%;
+                }
+            }
+            
+        }
+           
+        }
+    }
+}
+
+
+.bTwo
+{
+    background: url('img/b.png') no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+
+   .mono
+   {
+       width: 100%;
+       height: 50rem;
+       position: relative;
+   }
+   img
+   {
+     width: 100%;
+      position: relative;
+    height: 50%;
+   
+   
+       
+   }
+   .content
+   {
+       position: absolute;
+       color: $b;
+      top: 0;
+      width: 100%;
+      height: 30%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+text-align: center;
+       
+       h3 
+       {
+           font-size: 1.7rem;
+       }
+       p 
+       {
+           font-size: 1.2rem;
+           margin: 1rem;
+       }
+       .dot
+       {
+        width: 1.2rem;height: 1.2rem;background: $b;
+        border-radius: 5rem;
+        display: inline-block; margin: 2rem 0;
+        margin: 1rem .5rem;
+       }
+       .list
+       {
+           a
+           {
+               font-size: 1.3rem; margin: 1.5rem .5rem;color: $b;font-weight: bold;
+
+           }
+       }
+   }
+ 
+}
+
+.bing
+{
+    background: #000;
+    display: flex;
+    align-items: center;
+
+    .com
+    {
+        width: 100%;
+     
+
+        background: url('img/b2.png') no-repeat;
+        overflow: hidden;
+
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+      
+
+        .container
+        {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-direction: column;
+            margin: 5rem 0;
+ 
+            h3 
+            {
+                font-size: 1.7rem;
+            }
+            p 
+            {
+                font-size: 1.2rem;
+                margin: 1rem;
+            }
+            .dot
+            {
+             width: 1.2rem;height: 1.2rem;background: $b;
+             border-radius: 5rem;
+             display: inline-block; margin: 2rem 0;
+             margin: 1rem .5rem;
+            }
+            .list
+       {
+           a
+           {
+               font-size: 1.3rem; margin: 1.5rem .5rem;color: $b;font-weight: bold;
+
+           }
+       }
+
+        }
+       
+    }
+}
+
+
+.dema
+{
+    background: url('img/b1.png') no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    position: relative;
+    .container
+    {
+        background: rgba(255, 255, 255, 0.7);
+        margin-top: 15rem;
+        position: absolute;
+        left: 0%; right: 0;
+
+        .content
+        {
+            text-align: center;
+
+            h2 
+            {
+                font-size: 4rem;
+                margin-top: 1rem;
+            }
+            h1 
+            {
+                font-size: 2.5rem;
+            }
+        }
+       .content2
+       {
+
+        display: flex;
+
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .box
+        {
+            flex: 1 1 50rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+           
+            .b
+            {
+                background: rgb(247, 243, 243);
+                display: inline-block;
+                width: 5rem;
+                height: 5rem;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                border-radius: 5rem; margin-right: .5rem;
+
+                img 
+                {
+                    width: 100%;
+                }
+            }
+        }
+       }
+    }
+}
+
+
+.book
+{
+    background: #2a3b40;
+    padding: 1rem;
+
+    h2
+    {
+        color: $w;
+
+        &.content-brand
+        {
+            text-align: center;
+        }
+    }
+    .bookcontent
+    {
+      display: inline-block;
+
+      display:flex ;
+        flex-wrap: wrap;
+        justify-content: center;
+        // align-items: center;
+        text-align: center;
+        gap: 1rem;
+        
+        
+        .box
+        {
+            flex: 1 1 50rem;
+         
+           
+            
+            
+            h2 
+            {
+                font-size: 1.8rem;
+                margin: .5rem 0;
+                display: block;
+                
+            }
+            input,button
+            {
+                background: transparent;
+                outline: none;
+                border: .1rem solid $w;
+                border-radius: .5rem;
+                width: 25rem;
+                color: $w;
+                padding: .5rem;
+
+               
+                
+
+            }
+        }
+    }
+}
+
+.book-c
+{
+    img 
+    {
+        width: 100%;
+    }
+}
+// {
+//     background: url('img/book.png') no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     min-height: 100vh;
+// }
+.discover
+{
+    background: $w;
+    padding: 8rem 0;
+
+    .content
+    {
+        text-align: center;
+       
+        
+        h2
+        {
+            font-size: 3.5rem;
+           
+
+        }
+        h1
+        {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .xob
+    {
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        .box
+        {
+
+
+           
+            width: 30rem;
+            overflow: hidden;
+            
+
+            .imgs
+            {
+                
+                img 
+                {
+                    width: 100%;
+                }
+            }
+            .con
+            {
+                background: #fff;
+                padding: 1rem;
+                color: $b;
+                
+                .p2
+                {
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                }
+                .p3
+                {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+
+                } 
+                .p4
+            {
+                font-size: 1.5rem;
+            }
+            div
+            {
+                width: 8rem;
+                height: .7rem;
+                background: #d1660f;
+            }
+                
+            }
+            
+            
+        }
+    }
+}
+
+
+
+.lsend
+{
+    background: $b;
+    color: $w;
+    text-align: center;
+    padding: 8rem 0;
+
+    h1
+    {
+        font-size: 8rem;
+        line-height: 3rem;
+    }
+    .pp
+    {
+        font-size: 2rem;
+        margin-bottom:2rem ;
+    }
+
+    .p 
+    {
+        font-size: 2rem;
+        margin-bottom:2rem ;
+        color: #fff;
+    }
+    .idon
+    {
+        .ic
+        {
+            background:$w;
+        display: inline-block;
+        padding: 1rem 0.5rem;
+        border-radius: 60%;
+        margin: 0 1rem;
+
+          
+       
+        }
+        .fab
+        {
+            margin: 0 1rem;
+            font-size: 2.5rem;
+            color: $b;
+          
+        }
+    }
+}
+
+footer
+{
+    padding: 5rem 10rem;
+
+    background: $w;
+    display: flex;
+    color: $b;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .box
+    {
+        flex: 1 1 50rem;
+        font-family: 'Raleway', sans-serif;
+
+        h1 
+        {
+            font-weight: bold;
+            margin-bottom: 3.5rem;
+        }
+        p
+        {
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+        }
+
+        &.mox
+        {
+            display: flex;
+
+            .b1 
+            {
+                flex: 1 1;
+
+                p
+                {
+                    font-weight: bold;
+                    font-size: 1.7rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px)
+
+
+{
+    html 
+    {
+        font-size: 40%;
+    } 
+}
+
+
+
+
+@media (max-width:450px)
+{
+    html 
+    {
+        font-size: 38%;
+    }
+    #menubtn
+{
+   
+    display: block;
+    
+}
+.navbara .link
+{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    z-index: -999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding: 15rem 0;
+
+
+    &.active
+    {
+        left: 0%;
+        
+    a
+    {
+        margin: 2rem 0;
+    }
+    }
+
+    a
+    {
+        margin: 5rem 0;
+    }
+}
+
+.flavours
+{
+    .box,.box-1
+    {
+        flex-direction: column;
+
+    }
+}
+.dema
+{
+    height: 90vh;
+}
+.discover
+{
+    .xob {
+        flex-direction: column;
+        .box
+    {
+        flex-direction: column;
+    }
+    }
+}
+}
